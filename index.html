@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        #head1{
+            font-size:5vw;
+        }
+        #input{
+            font-size: 5vw;
+            margin-top: 10vh;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    
+    <input type="text" id="input">
+<input type="button" id="head1" value="rakesh" onmouseup="demo1()" ondblclick="otp()" onclick="random()" onmousedown="demo()" onmouseover="over()" >
+<p id="ram"></p>
+</body>
+<script>
+function random(){
+var frnd=Math.floor(Math.random()*(10000-1)+999)
+    document.getElementById("input").value=frnd;   
+}
+function demo(){
+    let head1=document.getElementById("head1")
+    head1.style.backgroundColor="red"
+}
+function demo1(){
+    let head2=document.getElementById("head1")
+    head1.style.backgroundColor="green"
+}
+function otp(){
+document.getElementById("ram").innerHTML="otp has sent"
+ 
+}
+function over(){
+document.body.style.backgroundColor="blue"
+}
+
+</script>
+
+
+</html>
